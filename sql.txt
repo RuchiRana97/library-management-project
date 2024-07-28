@@ -1,0 +1,28 @@
+create database lms;
+use lms;
+CREATE TABLE student (
+    studentID VARCHAR(10) NOT NULL PRIMARY KEY,
+    name VARCHAR(100),
+    fatherName VARCHAR(108),
+    courseName VARCHAR(28),
+    branchName VARCHAR(20)
+);
+CREATE TABLE book (
+    bookID VARCHAR(10) NOT NULL PRIMARY KEY,
+    name VARCHAR(100),
+    publisher VARCHAR(100),
+    price VARCHAR(10),
+    publisherYear VARCHAR(5)
+);
+CREATE TABLE issue (
+    bookID VARCHAR(10),
+    studentID VARCHAR(10),
+    issueDate VARCHAR(20),
+    dueDate VARCHAR(20),
+    returnBook VARCHAR(5)
+);
+
+
+
+
+
